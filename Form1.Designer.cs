@@ -34,6 +34,7 @@
             this.btnHitungMhs = new System.Windows.Forms.Button();
             this.btnHitungMk = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
+            this.hitungDosen = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -92,11 +93,21 @@
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
+            // hitungDosen
+            // 
+            this.hitungDosen.Location = new System.Drawing.Point(218, 328);
+            this.hitungDosen.Name = "hitungDosen";
+            this.hitungDosen.Size = new System.Drawing.Size(75, 23);
+            this.hitungDosen.TabIndex = 6;
+            this.hitungDosen.Text = "Hitung Dosen";
+            this.hitungDosen.UseVisualStyleBackColor = true;
+            // 
             // txtHasil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.hitungDosen);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnHitungMk);
             this.Controls.Add(this.btnHitungMhs);
@@ -118,6 +129,7 @@
         private System.Windows.Forms.Button btnHitungMhs;
         private System.Windows.Forms.Button btnHitungMk;
         private System.Windows.Forms.Button btnUpdate;
+        private System.Windows.Forms.Button hitungDosen;
     }
 }
 
