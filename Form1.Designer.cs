@@ -36,6 +36,7 @@
             this.btnUpdate = new System.Windows.Forms.Button();
             this.hitungDosen = new System.Windows.Forms.Button();
             this.btnUpdateMk = new System.Windows.Forms.Button();
+            this.btnTambahProdi = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -112,11 +113,21 @@
             this.btnUpdateMk.Text = "Update Mk";
             this.btnUpdateMk.UseVisualStyleBackColor = true;
             // 
+            // btnTambahProdi
+            // 
+            this.btnTambahProdi.Location = new System.Drawing.Point(545, 327);
+            this.btnTambahProdi.Name = "btnTambahProdi";
+            this.btnTambahProdi.Size = new System.Drawing.Size(75, 23);
+            this.btnTambahProdi.TabIndex = 8;
+            this.btnTambahProdi.Text = "Tambah Prodi";
+            this.btnTambahProdi.UseVisualStyleBackColor = true;
+            // 
             // txtHasil
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnTambahProdi);
             this.Controls.Add(this.btnUpdateMk);
             this.Controls.Add(this.hitungDosen);
             this.Controls.Add(this.btnUpdate);
@@ -142,6 +153,7 @@
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button hitungDosen;
         private System.Windows.Forms.Button btnUpdateMk;
+        private System.Windows.Forms.Button btnTambahProdi;
     }
 }
 
