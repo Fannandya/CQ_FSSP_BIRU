@@ -123,6 +123,7 @@
             this.btnTambahProdi.TabIndex = 8;
             this.btnTambahProdi.Text = "Tambah Prodi";
             this.btnTambahProdi.UseVisualStyleBackColor = true;
+            this.btnTambahProdi.Click += new System.EventHandler(this.btnTambahProdi_Click);
             // 
             // txtHasil
             // 
