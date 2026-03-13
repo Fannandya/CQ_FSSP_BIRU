@@ -9,6 +9,13 @@ namespace PraktikumADO
         SqlConnection conn;
         SqlCommand cmd;
 
+        private void Koneksi()
+        {
+            conn = new SqlConnection(
+                "Data Source=tomiskibidi\\TAMA;Initial Catalog=DBAkademikADO;Integrated Security=True"
+            );
+        }
+
         public txtHasil()
         {
             InitializeComponent();
