@@ -50,9 +50,9 @@ namespace PraktikumADO
 
                 cmd = new SqlCommand(query, conn);
 
-                int count = (int)cmd.ExecuteScalar();
+                int jumlah = (int)cmd.ExecuteScalar();
 
-                txtHasil.Text = jumlah.ToString();
+                textBox1.Text = jumlah.ToString();
 
                 conn.Close();
             }
@@ -73,9 +73,9 @@ namespace PraktikumADO
 
                 cmd = new SqlCommand(query, conn);
 
-                int count = (int)cmd.ExecuteScalar();
+                int jumlah = (int)cmd.ExecuteScalar();
                 
-                txtHasil.Text = jumlah.ToString();
+                textBox1.Text = jumlah.ToString();
                 
                 conn.Close();
             }
@@ -119,9 +119,9 @@ namespace PraktikumADO
                 
                 cmd = new SqlCommand(query, conn);
                 
-                int count = (int)cmd.ExecuteScalar();
+                int jumlah = (int)cmd.ExecuteScalar();
                 
-                txtHasil.Text = jumlah.ToString();
+                textBox1.Text = jumlah.ToString();
                 
                 conn.Close();
             }
@@ -158,7 +158,7 @@ namespace PraktikumADO
             {
                 Koneksi();
                 conn.Open();
-                string query = "INSERT INTO Prodi VALUES (MK23, akuntansi)";
+                string query = "INSERT INTO ProgramStudi VALUES ('MK23', 'akuntansi')";
 
                 cmd = new SqlCommand(query, conn);
 
