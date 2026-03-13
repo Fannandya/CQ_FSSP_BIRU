@@ -130,5 +130,26 @@ namespace PraktikumADO
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
+
+        private void btnUpdateMk_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Koneksi();
+                conn.Open();
+
+                string query = "UPDATE MataKuliah SET SKS = '4' WHERE KodeMK = 'MK001'";
+
+                cmd = new SqlCommand(query, conn);
+
+                int hasil = cmd.ExecuteNonQuery();
+                MessageBox.Show("jumlah baris terpengaruhi: " + hasil);
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
     }
 }
