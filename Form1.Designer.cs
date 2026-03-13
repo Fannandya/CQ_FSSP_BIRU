@@ -97,12 +97,13 @@
             // 
             // hitungDosen
             // 
-            this.hitungDosen.Location = new System.Drawing.Point(218, 328);
+            this.hitungDosen.Location = new System.Drawing.Point(183, 328);
             this.hitungDosen.Name = "hitungDosen";
-            this.hitungDosen.Size = new System.Drawing.Size(75, 23);
+            this.hitungDosen.Size = new System.Drawing.Size(110, 23);
             this.hitungDosen.TabIndex = 6;
             this.hitungDosen.Text = "Hitung Dosen";
             this.hitungDosen.UseVisualStyleBackColor = true;
+            this.hitungDosen.Click += new System.EventHandler(this.hitungDosen_Click);
             // 
             // btnUpdateMk
             // 
@@ -117,7 +118,7 @@
             // 
             this.btnTambahProdi.Location = new System.Drawing.Point(545, 327);
             this.btnTambahProdi.Name = "btnTambahProdi";
-            this.btnTambahProdi.Size = new System.Drawing.Size(75, 23);
+            this.btnTambahProdi.Size = new System.Drawing.Size(103, 23);
             this.btnTambahProdi.TabIndex = 8;
             this.btnTambahProdi.Text = "Tambah Prodi";
             this.btnTambahProdi.UseVisualStyleBackColor = true;
