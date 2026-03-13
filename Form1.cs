@@ -84,5 +84,28 @@ namespace PraktikumADO
                 MessageBox.Show("Error: " + ex.Message);
             }
         }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Koneksi();
+                conn.Open();
+
+                string query = "UPDATE Mahasiswa SET Nama = 'Nama Baru' WHERE NIM = '12345'";
+                
+                cmd = new SqlCommand(query, conn);
+                
+                int hasil = cmd.ExecuteNonQuery();
+
+                MessageBox.Show("jumlah baris terpengaruhi: " + hasil);
+
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error: " + ex.Message);
+            }
+        }
     }
 }
