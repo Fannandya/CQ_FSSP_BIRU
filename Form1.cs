@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PraktikumADO
 {
-    public partial class Form1: Form
+    public partial class txtHasil: Form
     {
-        public Form1()
+        public txtHasil()
         {
             InitializeComponent();
         }
